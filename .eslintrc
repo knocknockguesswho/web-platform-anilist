@@ -1,0 +1,326 @@
+{
+  "root": true,
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "next"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@babel",
+    "@typescript-eslint",
+    "react"
+  ],
+  "parserOptions": {
+    "jsx": true
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/jsx-pascal-case": "error",
+    "react/jsx-max-props-per-line": [
+      1,
+      {
+        "when": "multiline"
+      }
+    ],
+    "react/jsx-tag-spacing": [
+      "warn",
+      {
+        "beforeClosing": "never"
+      }
+    ],
+    "react/jsx-closing-bracket-location": [
+      "warn",
+      {
+        "selfClosing": "tag-aligned",
+        "nonEmpty": "after-props"
+      }
+    ],
+    "react/no-unescaped-entities": [
+      "warn"
+    ],
+    "eol-last": "warn",
+    "space-infix-ops": "warn",
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": "warn",
+    "no-unneeded-ternary": "warn",
+    "no-nested-ternary": "warn",
+    "no-duplicate-imports": "warn",
+    "no-lonely-if": "warn",
+    "no-multi-spaces": "warn",
+    "no-multiple-empty-lines": [
+      "warn",
+      {
+        "max": 1,
+        "maxEOF": 0
+      }
+    ],
+    "jsx-quotes": [
+      "warn",
+      "prefer-single"
+    ],
+    "block-spacing": "warn",
+    "keyword-spacing": [
+      "warn",
+      {
+        "before": true,
+        "after": true
+      }
+    ],
+    "key-spacing": [
+      "warn",
+      {
+        "singleLine": {
+          "beforeColon": false,
+          "afterColon": true
+        },
+        "multiLine": {
+          "beforeColon": false,
+          "afterColon": true
+        }
+      }
+    ],
+    "arrow-spacing": "warn",
+    "func-call-spacing": "warn",
+    "object-curly-newline": [
+      "error",
+      {
+        "consistent": true
+      }
+    ],
+    "object-property-newline": [
+      "warn",
+      {
+        "allowAllPropertiesOnSameLine": true
+      }
+    ],
+    "space-before-blocks": "warn",
+    "space-before-function-paren": [
+      "warn",
+      {
+        "anonymous": "never",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ],
+    "space-in-parens": "warn",
+    "indent": [
+      "warn",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "max-len": [
+      "warn",
+      {
+        "code": 180,
+        "tabWidth": 2
+      }
+    ],
+    "brace-style": [
+      "error",
+      "1tbs",
+      {
+        "allowSingleLine": true
+      }
+    ],
+    "curly": [
+      "warn",
+      "multi-line"
+    ],
+    "template-curly-spacing": [
+      "warn",
+      "never"
+    ],
+    "arrow-parens": [
+      "warn",
+      "always"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "comma-style": [
+      "warn",
+      "last"
+    ],
+    "comma-spacing": "warn",
+    "comma-dangle": [
+      "warn",
+      "always-multiline"
+    ],
+    "dot-notation": "warn",
+    "new-cap": "off",
+    "@babel/new-cap": [
+      "error",
+      {
+        "newIsCapExceptions": [
+          "model"
+        ]
+      }
+    ],
+    "semi": "off",
+    "@babel/semi": "error",
+    "no-prototype-builtins": "warn",
+    "no-console": "warn",
+    "camelcase": "off",
+    // "object-property-newline": "off",
+    "no-trailing-spaces": [
+      "error"
+    ],
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "array-bracket-spacing": [
+      "error",
+      "never"
+    ],
+    "array-bracket-newline": [
+      "error",
+      "consistent"
+    ],
+    "array-element-newline": [
+      "error",
+      "consistent"
+    ],
+    // "quotes": [
+    //   "error",
+    //   "single",
+    //   {
+    //     "avoidEscape": true
+    //   }
+    // ],
+    // "comma-dangle": "off",
+    "generator-star-spacing": [
+      "error",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": [
+      "error"
+    ],
+    "@typescript-eslint/naming-convention": [
+      "warn",
+      {
+        "selector": "variable",
+        "format": [
+          "camelCase",
+          "snake_case",
+          "UPPER_CASE",
+          "PascalCase"
+        ]
+      },
+      {
+        "selector": "memberLike",
+        "modifiers": [
+          "private"
+        ],
+        "format": [
+          "camelCase"
+        ],
+        "leadingUnderscore": "require"
+      },
+      {
+        "selector": "variableLike",
+        "format": [
+          "camelCase"
+        ]
+      },
+      {
+        "selector": "typeLike",
+        "format": [
+          "PascalCase"
+        ]
+      },
+      {
+        "selector": "enum",
+        "format": [
+          "UPPER_CASE"
+        ]
+      },
+      {
+        "selector": "enumMember",
+        "format": [
+          "UPPER_CASE"
+        ]
+      },
+      {
+        "selector": "class",
+        "format": [
+          "PascalCase"
+        ]
+      },
+      {
+        "selector": "parameter",
+        "format": [
+          "camelCase"
+        ],
+        "leadingUnderscore": "allow"
+      },
+      {
+        "selector": "function",
+        "format": [
+          "camelCase"
+        ]
+      },
+      {
+        "selector": "interface",
+        "format": [
+          "PascalCase"
+        ],
+        "prefix": [
+          "I"
+        ]
+      },
+      {
+        "selector": "typeParameter",
+        "format": [
+          "PascalCase"
+        ],
+        "prefix": [
+          "T"
+        ]
+      }
+    ]
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/*.tsx"
+      ],
+      "rules": {
+        "react/no-unknown-property": [
+          "error",
+          {
+            "ignore": [
+              "css"
+            ]
+          }
+        ],
+        "@typescript-eslint/naming-convention": [
+          "error",
+          {
+            "selector": "variable",
+            "modifiers": [
+              "const"
+            ],
+            "format": [
+              "camelCase",
+              "PascalCase"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
