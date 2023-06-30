@@ -21,7 +21,7 @@ const MediaDetailView = () => {
   });
 
   if (error) return <Error statusCode={404} />;
-  if (loading) return <>Loading</>;
+  if (loading) return <div className='w-screen h-screen flex items-center justify-center'><span>Loading...</span></div>;
   return data ? (
     <div className='w-full'>
       <BannerSection
