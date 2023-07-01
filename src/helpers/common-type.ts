@@ -22,6 +22,7 @@ export const iconName = [
   'arrow-right',
   'chevron-down',
   'chevron-up',
+  'grid',
 ] as const;
 
 export const iconSize = Object.freeze({

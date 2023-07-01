@@ -6,6 +6,7 @@ const ArrowLeft = dynamic(() => import('Assets/icon/arrow-left'));
 const ArrowRight = dynamic(() => import('Assets/icon/arrow-right'));
 const ChevronDown = dynamic(() => import('Assets/icon/chevron-down'));
 const ChevronUp = dynamic(() => import('Assets/icon/chevron-up'));
+const Grid = dynamic(() => import('Assets/icon/grid'));
 
 const Icon = (props: IIconContainerProps) => {
   const args = { ...props, id: props.name + '-icon' };
@@ -14,6 +15,7 @@ const Icon = (props: IIconContainerProps) => {
     case 'arrow-right': return <ArrowRight {...args} />;
     case 'chevron-down': return <ChevronDown {...args} />;
     case 'chevron-up': return <ChevronUp {...args} />;
+    case 'grid': return <Grid {...args} />;
     default: return <ChevronUp {...args} />;
   }
 };
