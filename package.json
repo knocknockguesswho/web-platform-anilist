@@ -12,6 +12,7 @@
   "dependencies": {
     "@apollo/client": "^3.7.16",
     "@use-gesture/react": "^10.2.24",
+    "@vercel/analytics": "^1.0.1",
     "axios": "^1.4.0",
     "crypto": "^1.0.1",
     "dexie": "^3.2.4",
