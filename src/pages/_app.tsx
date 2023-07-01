@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Layout from 'Components/templates/layout';
 import { AppProps } from 'next/app';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
+import { Analytics } from '@vercel/analytics/react';
 import 'Styles/index.css';
 
 const client = new ApolloClient({
@@ -22,6 +23,7 @@ function AnimeCollections(props: AppProps) {
       </Head>
       <Layout>
         <Component {...pageProps} />
+        <Analytics />
       </Layout>
     </ApolloProvider>
   );
